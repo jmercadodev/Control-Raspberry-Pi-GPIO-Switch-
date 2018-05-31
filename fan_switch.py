@@ -9,7 +9,6 @@ while True:
     temp = os.popen('vcgencmd measure_temp').readline()
     threshold = int(35)
     temp = int(temp[5:7])
-##    print(temp)
     
     if temp >= threshold:
         print('Fan On | {} >= {}' .format(temp, threshold))
