@@ -11,7 +11,7 @@ while True:
     temp = int(temp[5:7])
     
     if temp >= threshold:
-        print('Fan On | {} >= {}' .format(temp, threshold))
+        print('Fan ON | {} >= {}' .format(temp, threshold))
         gpio.output(4,True)
         time.sleep(3)
 
